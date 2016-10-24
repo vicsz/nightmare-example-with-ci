@@ -1,6 +1,7 @@
 var Nightmare = require('nightmare');
-var nightmare = Nightmare({ show: true });
+var nightmare = Nightmare();
 
+console.log("EntryPoint")
 nightmare
   .goto('http://yahoo.com')
   .type('form[action*="/search"] [name=p]', 'github nightmare')
@@ -11,8 +12,10 @@ nightmare
   })
   .end()
   .then(function (result) {
+    console.log("Result")
     console.log(result)
   })
   .catch(function (error) {
+    console.log("Error")
     console.error('Search failed:', error);
   });
