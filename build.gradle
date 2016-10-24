@@ -1,0 +1,13 @@
+plugins {
+  id "com.moowork.node" version "0.13"
+}
+
+node {
+    version = "6.9.1"
+    npmVersion = '3.10.3'
+    download = true
+}
+
+task runJs(type: NodeTask) {
+  script = file('example.js')
+}
