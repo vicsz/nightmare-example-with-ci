@@ -9,5 +9,6 @@ node {
 }
 
 task runJs(type: NodeTask) {
+  dependsOn 'npmInstall'
   script = file('example.js')
 }
