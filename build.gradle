@@ -3,8 +3,8 @@ plugins {
 }
 
 node {
-    version = "6.9.1"
-    npmVersion = '3.10.3'
+    version = "6.9.4"
+    npmVersion = '4.0.5'
     download = true
 }
 
@@ -12,3 +12,5 @@ task runJs(type: NodeTask) {
   dependsOn 'npmInstall'
   script = file('example.js')
 }
+
+defaultTasks 'runJs'
