@@ -6,6 +6,6 @@
 
 ## Quick Start (JS style)
 
-1. Ensure npm is installed (on OSX "brew install node") 
-2. Install nightmareJS *npm install nightmare*
-3. Run *node example.js*
+1. Ensure npm is installed (on OSX "**brew install node**") 
+2. Install nightmareJS **npm install nightmare**
+3. Run **node example.js**
